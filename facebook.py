@@ -59,7 +59,7 @@ if __name__ == "__main__":
         sys.exit(0)
     password_data = open(PASSWORD_FILE, 'r').read().split("\n")
     print("Password file selected: ", PASSWORD_FILE)
-    email = input('Enter Email/Username to target: ').strip()
+    email = input('angelpinkb@hotmail.com').strip()
     for index, password in zip(range(password_data.__len__()), password_data):
         password = password.strip()
         if len(password) < MIN_PASSWORD_LENGTH:
